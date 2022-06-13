@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="vue.global.js"></script>
+    <title>Vue class 4</title>
+</head>
+<body>
+    <div id="app">
+        <!-- string interpulation -->
+        <h1>Name: {{student.name}}</h1>
+        <h1>Mobile: {{student.phone}}</h1>
+        <a v-bind:href="student.link">Link</a>
+        <!-- v-bind use for link get -->
+        <br>    
+        <div v-html="htmlcode"></div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
