@@ -10,11 +10,15 @@
 </head>
 <body>
     <div id="app">
-        <form @submit.prevent="submitEventHandel()">
+        <form @submit.prevent="submitEventHandel($event)">
             <h3>Enter Your Name: <input type="text" @keyup="keyupHandel"></h3>
             <h4>Wellcome:  {{name}}</h4>
             <button>Ok</button>
         </form>
+        <hr>
+        <div @click="handleCardClick" class="card">
+            <button @click.stop="viewHandleClick">View</button>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>
