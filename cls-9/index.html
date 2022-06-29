@@ -16,6 +16,7 @@
         <button class="button" :class="{active: activeClass == 'red', bold:true}" @click="setClass('red')">Red</button>
         <button class="button" :class="{active: activeClass == 'green'}" @click="setClass('green')">Green</button>
         <button class="button" :class="{active: activeClass == 'blue'}" @click="setClass('blue')">Blue</button>
+        <!-- if we want, try to use array class -->
         <button :class="['button','active']">Active Class</button>
         <div :class="activeClass"></div>
     </div>

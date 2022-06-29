@@ -1,0 +1,35 @@
+.card{
+    margin-top: 10px;
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+}
+.red{
+    background: red;
+    width: 100px;
+    height: 50px;
+}
+.green{
+    background: green;
+    width: 100px;
+    height: 50px;
+}
+.blue{
+    background: blue;
+    width: 100px;
+    height: 50px;
+}
+.active{
+    background-color: rgb(88, 69, 43);
+    color: rgb(246, 241, 233);
+}
+.button{
+    border: 1px solid lightblue;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+input{
+    padding: 5px;
+    margin: 5px;
+}
