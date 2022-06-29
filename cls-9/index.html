@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="vue.global.js"></script>
+    <title>Vue Class 9</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- class value must be object here, use multiple object here -->
+        <button class="button" :class="{active: activeClass == 'red', bold:true}" @click="setClass('red')">Red</button>
+        <button class="button" :class="{active: activeClass == 'green'}" @click="setClass('green')">Green</button>
+        <button class="button" :class="{active: activeClass == 'blue'}" @click="setClass('blue')">Blue</button>
+        <button :class="['button','active']">Active Class</button>
+        <div :class="activeClass"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
