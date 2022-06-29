@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="vue.global.js"></script>
-    <title>Vue Class 10</title>
+    <title>Vue Class 11</title>
 </head>
 
 <body>
@@ -17,11 +17,12 @@
         </header>
     </section>
     <div id="app">
-      <input type="text" v-model="bgColor"/>
-      <input type="color" v-model="bgColor"/><br>
-      <input type="text" v-model="textColor"/>
-      <input type="color" v-model="textColor"/>
-      <div class="card"  :style="{backgroundColor:bgColor,color:textColor}">Box</div>
+        <h3>Skills</h3>
+        <input type="text" v-model="newSkill" >
+        <button class="button" @click="addSkills">Add</button>
+        <ul>
+            <li v-for="(skill,i) in skills" @click="remove(i)">{{i+1}}.{{skill.skill}}-{{skill.exp}}</li>
+        </ul>
     </div>
     <script src="app.js"></script>
 </body>
