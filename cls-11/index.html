@@ -18,10 +18,10 @@
     </section>
     <div id="app">
         <h3>Skills</h3>
-        <input type="text" v-model="newSkill" >
+        <input type="text" v-model="newSkill.name" >
         <button class="button" @click="addSkills">Add</button>
         <ul>
-            <li v-for="(skill,i) in skills" @click="remove(i)">{{i+1}}.{{skill.skill}}-{{skill.exp}}</li>
+            <li v-for="(skill,i) in skills" @click="remove(i)">{{i+1}}.{{skill.name}}-{{skill.exp}}</li>
         </ul>
     </div>
     <script src="app.js"></script>
